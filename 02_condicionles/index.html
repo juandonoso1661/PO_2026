@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- autor del documento -->
+    <meta name="author" content="juandonoso@liuceovvh.cl">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- google fonts -->
+    <title>arreglos y matrices</title>
+</head>
+
+<body>
+    <!-- nav bar bootstrap -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container p-2">
+        <!-- ejercicio n°1 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">ejercicio 1</h5>
+                <p class="card-text">edad para ingresar a la app</p>
+                <a href="#" class="btn btn-primary" onclick="porteroDigital()">1° ejercicio</a>
+            </div>
+        </div>
+
+        <!-- ejercicio n°2 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">ejercicio 2</h5>
+                <p class="card-text">fila de espera</p>
+                <a href="#" class="btn btn-primary" onclick="filaEspera()">2° ejercicio</a>
+            </div>
+        </div>
+
+        <!-- ejercicio n°3 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">ejercicio 3</h5>
+                <p class="card-text">reordenar numeros</p>
+                <a href="#" class="btn btn-primary" onclick="reordenarNumeros()">3° ejercicio</a>
+            </div>
+        </div>
+
+        <!-- ejercicio n°4 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">ejercicio 4</h5>
+                <p class="card-text">coordenadas de Matriz</p>
+                <a href="#" class="btn btn-primary" onclick="coordenadasMatriz()">4° ejercicio</a>
+            </div>
+        </div>
+
+
+        <!-- ejercicio n°5 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">ejercicio 5</h5>
+                <p class="card-text">tercera dimension</p>
+                <a href="#" class="btn btn-primary" onclick="terceraDimension()">5° ejercicio</a>
+            </div>
+        </div>
+
+        <!-- ejercicio 6 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 6</h5>
+                <p class="card-text">Traductor de Acciones (Matriz + Arreglo)</p>
+                <a href="#" class="btn btn-primary" onclick="traductorAcciones()">Ejercicio n°6</a>
+            </div>
+        </div>
+
+        <!-- ejercicio 7 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 7</h5>
+                <p class="card-text">Limpieza de Datos (Pop y Unshift)</p>
+                <a href="#" class="btn btn-primary" onclick="limpiezaDatos()">Ejercicio n°7</a>
+            </div>
+        </div>
+
+        <!-- ejercicio 8 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 8</h5>
+                <p class="card-text">La Matriz de Identidad Modificada</p>
+                <a href="#" class="btn btn-primary" onclick="matrizIdModificada()">Ejercicio n°8</a>
+            </div>
+        </div>
+
+        <!-- ejercicio 9 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 9</h5>
+                <p class="card-text">El Consultorio Médico (Complejo)</p>
+                <a href="#" class="btn btn-primary" onclick="consultorioMedico()">Ejercicio n°9</a>
+            </div>
+        </div>
+
+        <!-- ejercicio 10 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 10</h5>
+                <p class="card-text">Extracción de Profundidad (Matriz 3x3x3)</p>
+                <a href="#" class="btn btn-primary" onclick="extraccionProfundidad()">Ejercicio n°10</a>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- script -->
+    <script src="static/js/script.js"></script>
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
