@@ -231,7 +231,7 @@ function parrafosAdvertencia() {
     let temperaturas = [22, 24, 28, 35, 21, 38];
     const container8 = document.getElementById('resultadoContainer8');
     const result8 = document.getElementById('result8');
-    for (let i = 0; i < temperaturas.length; i++) {
+    for (let i = 0; i < temperaturas.lengt...arguments.h; i++) {
         if (temperaturas[i] > 30) {
             result8.innerHTML += `¡alerta temperaturas peligrosas de ${temperaturas[i]} grados. <br>!`
         }
