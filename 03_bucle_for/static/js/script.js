@@ -65,14 +65,14 @@ Si el producto es diferente de "Agotado" (!==), agrégalo al texto del párrafo 
  */
 
 function controlStock() {
-    let productos = ["Teclado" , " Mouse" , "Agotado" , "Monitor" , "Agotado" , "Audifonos"];
+    let productos = ["Teclado", " Mouse", "Agotado", "Monitor", "Agotado", "Audifonos"];
     let disponibles = [];
 
     const apro = document.getElementById(`resultadoProd`);
     const resultado = document.getElementById(`result4`);
 
-    for(let i = 0; i < productos.length; i++){
-        if(productos[i] !== "Agotado"){
+    for (let i = 0; i < productos.length; i++) {
+        if (productos[i] !== "Agotado") {
             disponible.push(productos[i]);
         }
     }
@@ -231,10 +231,13 @@ function parrafosAdvertencia() {
     let temperaturas = [22, 24, 28, 35, 21, 38];
     const container8 = document.getElementById('resultadoContainer8');
     const result8 = document.getElementById('result8');
-    for (let i = 0; i < temperaturas.lengt...arguments.h; i++) {
-        if (temperaturas[i] > 30) {
-            result8.innerHTML += `¡alerta temperaturas peligrosas de ${temperaturas[i]} grados. <br>!`
+    for (let i = 0; i < temperaturas.length; i++) {
+        if (temperaturas[i] >= 30 && temperaturas[i] < 50) {
+            result8.innerText +=
+            `Alerta!! temperatura critica de ${temperaturas[i]} grados.`
         }
     }
     container8.classList.remove('d-none');
 }
+
+
