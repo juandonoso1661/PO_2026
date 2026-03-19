@@ -68,7 +68,5 @@ function gestionarPedidos() {
 //Ejercicio 4: Validador de Códigos de Descuento (for e if)
 let codigosValidos = ["VERANO2026", "PROMO50", "CLIENTEVIP"]
 function validadorCodigo(validar) {
-    if (validar == ) {
-
-    }
+    
 }
