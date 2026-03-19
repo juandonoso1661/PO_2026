@@ -67,6 +67,31 @@ function gestionarPedidos() {
 
 //Ejercicio 4: Validador de Códigos de Descuento (for e if)
 let codigosValidos = ["VERANO2026", "PROMO50", "CLIENTEVIP"]
-function validadorCodigo(validar) {
-    
+function buscarCodigo(codigo) {
+    let mensaje = "codigo invalido o expirado";
+    for (let i = 0; i < codigosValidos.length; i++) {
+        if (codigo == codigosValidos[i]) {
+            mensaje = "¡Éxito! codigo aceptado"
+            return "¡Éxito! codigo aceptado";
+        } else {
+            mensaje = "Ingresa un codigo valido"
+        }
+    }
+    return mensaje
 }
+
+function verificarCodigo() {
+    let input = document.getElementById("input4");
+    let codigo = input.value;
+    const result = document.getElementById("resultado4");
+    const container = document.getElementById("resultadoContainer4");
+    let resultado = buscarCodigo(codigo);
+    result.textContent = resultado;
+
+    result.value = "";
+    container.classList.remove("d-none");
+};
+
+//Ejercicio 5: Simulador de Cuotas (for)
+function 
+
