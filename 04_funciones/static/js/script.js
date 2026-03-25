@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-console.log("Conectado...")
-
->>>>>>> 3dfb3b94547eccf270a7f7ad126353b9534ab638
 // Ejercicio 1: Lista de Asistencia (push)
 let asistencia = [];
 function agregarLista(nombre) {
@@ -21,17 +16,9 @@ function registrarAlumno() {
     container.classList.remove("d-none");
 };
 
-<<<<<<< HEAD
-// Ejercicio 2: Lista de asistencia medica
-let pacientes = ["Carlos", "María", "Diego"];
-function agregarUrgencia(){
-    pacientes.unshift();
-    return pacientes.join(", ");
-};
 
-=======
+
 //Ejercicio 2
-
 let pacientes = ["Carlos", "Maria", "Diego"];
 function agregarUrgencia(nombre) {
     pacientes.unshift(nombre);
@@ -104,7 +91,3 @@ function verificarCodigo() {
     container.classList.remove("d-none");
 };
 
-//Ejercicio 5: Simulador de Cuotas (for)
-function 
-
->>>>>>> 3dfb3b94547eccf270a7f7ad126353b9534ab638
