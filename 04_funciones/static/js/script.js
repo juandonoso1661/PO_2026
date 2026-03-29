@@ -1,5 +1,3 @@
-console.log("Conectado...")
-
 // Ejercicio 1: Lista de Asistencia (push)
 let asistencia = [];
 function agregarLista(nombre) {
@@ -18,8 +16,9 @@ function registrarAlumno() {
     container.classList.remove("d-none");
 };
 
-//Ejercicio 2
 
+
+//Ejercicio 2
 let pacientes = ["Carlos", "Maria", "Diego"];
 function agregarUrgencia(nombre) {
     pacientes.unshift(nombre);
@@ -80,6 +79,7 @@ function buscarCodigo(codigo) {
     return mensaje
 }
 
+//Ejercicios n°5
 function verificarCodigo() {
     let input = document.getElementById("input4");
     let codigo = input.value;
@@ -91,3 +91,50 @@ function verificarCodigo() {
     result.value = "";
     container.classList.remove("d-none");
 };
+<<<<<<< HEAD
+=======
+
+function operarIntruso() {
+    const producto = document.getElementById("input5");
+    let valorProducto = parseInt(producto.value);
+    const cuotaInput = document.getElementById("input5_2")
+    let cuota = parseInt(cuotaInput.value);
+    const result = document.getElementById("result5")
+    const container = document.getElementById("conatiner5")
+    let resultado = calcularCuotas(valorProducto, cuota)
+    result.textContent = resultado;
+    producto.value = ""
+    cuotaInput.value = ""
+    container.classList.remove("d-none")
+}
+
+let vitrina = [2500, 15000, 8000, 30000, 5000];
+let opciones = [];
+function comprobarPresupuesto(presupuesto) {
+    for (let i = 0; i < vitrina.length; i++) {
+        if (presupuesto >= vitrina[i]); {
+            opciones.push(vitrina[i]);
+        }
+    };
+    return;
+}
+
+//Ejercicios n°6
+function filtradoPrecios(){
+    let input = document.getElementById("input6");
+    const result = document.getElementById("result6"); 
+    const container = document.getElementById("container6");
+    let dinero = parseInt(input.value);
+    if(isNaN(dinero)) {
+        alert("ingresa valores válidos");
+    } else {
+        let resultado = comprobarPresupuesto(dinero);
+        result.textContent = resultado;
+        input.value = "";
+        conatienr.classList.remove("d-none")
+        opciones = [];
+    }
+}; 
+
+
+>>>>>>> 946421db044f50df59913b1508743a8ee7cac087
