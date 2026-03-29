@@ -91,7 +91,3 @@ function verificarCodigo() {
     result.value = "";
     container.classList.remove("d-none");
 };
-
-//Ejercicio 5: Simulador de Cuotas (for)
-function 
-
